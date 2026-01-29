@@ -136,11 +136,11 @@ export const PL1_ACTION_PLAN: string[] = [
   "Envolvimento Familiar: Programa de letramento familiar para reforçar estímulos de leitura em casa."
 ];
 
-// --- DATA SCHOOLS ---
+// --- DATA SCHOOLS (FLUENCY VIEW) ---
 
 export const SCHOOLS_2025: SchoolResult[] = [
   { name: "EM ABDIAS JUNIOR SANTIAGO E SILVA", pl: 0, li: 63, lf: 37 },
-  { name: "EM DULCE PEDROSA ROMEIRO GUIMA", pl: 15, li: 0, lf: 85 }, // Note: Adjusted based on visual interpretation of 'green' split in image or text data
+  { name: "EM DULCE PEDROSA ROMEIRO GUIMA", pl: 15, li: 0, lf: 85 }, 
   { name: "EM PROFA MARIA APARECIDA CAMARGO", pl: 0, li: 42, lf: 58 },
   { name: "EM PROFA MARIA MADUREIRA SALGADO", pl: 0, li: 82, lf: 18 },
   { name: "EM DOUTOR ANGELO PAZ DA SILVA", pl: 4, li: 47, lf: 49 },
@@ -166,22 +166,86 @@ export const SCHOOLS_2025: SchoolResult[] = [
   { name: "EM PROFA RACHEL DE AGUIAR LOUSADA", pl: 31, li: 48, lf: 20 },
   { name: "EM PROFESSORA YVONE APPARECIDA", pl: 31, li: 56, lf: 13 },
   { name: "EM PROFESSORA JULIETA REALE", pl: 43, li: 43, lf: 14 }
-].sort((a, b) => a.pl - b.pl); // Best schools (lowest PL) first
+].sort((a, b) => a.pl - b.pl);
 
 export const SCHOOLS_2024: SchoolResult[] = [
   { name: "EM PROFESSOR MOACYR DE ALMEIDA", pl: 0, li: 64, lf: 36 },
-  { name: "EM PROFA MARIA HELENA RIBEIRO", pl: 4, li: 73, lf: 22 },
+  { name: "EM PROFA MARIA HELENA RIBEIRO VILELA", pl: 4, li: 73, lf: 22 },
   { name: "EM DR ANDRE FRANCO MONTORO", pl: 4, li: 69, lf: 27 },
   { name: "EM ABDIAS JUNIOR SANTIAGO E SILVA", pl: 5, li: 73, lf: 22 },
   { name: "EM PROFESSOR AUGUSTO CESAR RIBEIRO", pl: 5, li: 63, lf: 32 },
-  { name: "EM PROFA MADALENA CALTABIANO", pl: 7, li: 55, lf: 38 },
-  { name: "EM PROFA MARIA MADUREIRA SALGADO", pl: 8, li: 69, lf: 23 },
-  { name: "EM PROFESSOR MARIO DE ASSIS", pl: 9, li: 58, lf: 33 },
-  { name: "EM PROFESSORA ISABEL DO CARMO", pl: 9, li: 70, lf: 21 },
-  { name: "EM PROFESSORA GILDA PIORINI", pl: 9, li: 44, lf: 47 },
+  { name: "EM PROFA MADALENA CALTABIANO SALUM BENJAMIM", pl: 7, li: 55, lf: 38 },
+  { name: "EM PROFA MARIA MADUREIRA SALGADO DONA MINICA", pl: 8, li: 69, lf: 23 },
+  { name: "EM PROFESSOR MARIO DE ASSIS CESAR", pl: 9, li: 58, lf: 33 },
+  { name: "EM PROFESSORA ISABEL DO CARMO NOGUEIRA", pl: 9, li: 70, lf: 21 },
+  { name: "EM PROFESSORA GILDA PIORINI MOLICA", pl: 9, li: 44, lf: 47 },
   { name: "EM PROFESSOR FELIX ADIB MIGUEL", pl: 10, li: 58, lf: 33 },
-  { name: "EM PROFA MARIA APARECIDA CAMARGO", pl: 10, li: 72, lf: 17 },
-  { name: "EM PROFA RACHEL DE AGUIAR LOUSADA", pl: 10, li: 55, lf: 34 },
+  { name: "EM PROFA MARIA APARECIDA ARANTES VASQUES", pl: 10, li: 72, lf: 18 },
+  { name: "EM PROFA RACHEL DE AGUIAR LOBERTO", pl: 10, li: 55, lf: 35 },
   { name: "EM PROFA ODETE CORREA MADUREIRA", pl: 11, li: 43, lf: 46 },
-  { name: "EM PADRE ZEZINHO", pl: 11, li: 71, lf: 17 }
+  { name: "EM PADRE ZEZINHO", pl: 11, li: 71, lf: 18 },
+  { name: "ESCOLA MUN PADRE MARIO ANTONIO BONOTTI RED...", pl: 14, li: 47, lf: 39 },
+  { name: "EM DULCE PEDROSA ROMEIRO GUIMARAES", pl: 14, li: 19, lf: 67 },
+  { name: "EM PROFESSORA RUTH AZEVEDO ROMEIRO", pl: 14, li: 61, lf: 25 },
+  { name: "EM JOAO CESARIO", pl: 15, li: 71, lf: 14 },
+  { name: "EM PROFESSOR PAULO FREIRE", pl: 15, li: 80, lf: 5 },
+  { name: "EM PROF LAURO VICENTE DE AZEVEDO", pl: 16, li: 66, lf: 18 },
+  { name: "EM PROFESSOR ORLANDO PIRES", pl: 16, li: 59, lf: 25 },
+  { name: "EM PROFESSOR JOAQUIM PEREIRA DA SILVA", pl: 18, li: 56, lf: 26 },
+  { name: "EM PROFA MARIA ZARA MINE RENOLDI DOS SANTOS", pl: 18, li: 71, lf: 11 },
+  { name: "EM DR FRANCISCO DE ASSIS CESAR", pl: 19, li: 53, lf: 28 },
+  { name: "EM PROFESSOR ALEXANDRE MACHADO SALGADO", pl: 19, li: 60, lf: 21 },
+  { name: "EM DOUTOR ANGELO PAZ DA SILVA", pl: 19, li: 45, lf: 36 },
+  { name: "EM ARTHUR DE ANDRADE", pl: 21, li: 55, lf: 24 },
+  { name: "EM JOSE GONCALVES DA SILVA SEU JUQUINHA", pl: 23, li: 51, lf: 26 },
+  { name: "EM SERAFIM FERREIRA SR SARA", pl: 23, li: 43, lf: 34 },
+  { name: "EM JOAO KOLENDA LEMOS", pl: 25, li: 71, lf: 4 },
+  { name: "EM PROFESSOR ELIAS BARGIS MATHIAS", pl: 25, li: 56, lf: 19 },
+  { name: "EM PROFA MARIA APARECIDA CAMARGO DE SOUZA", pl: 29, li: 43, lf: 28 },
+  { name: "EM VITO ARDITO", pl: 29, li: 50, lf: 21 },
+  { name: "EM PROFESSORA YVONE APPARECIDA ARANTES CORREA", pl: 31, li: 56, lf: 13 },
+  { name: "EM PROFESSORA JULIETA REALE VIEIRA", pl: 33, li: 52, lf: 15 },
+  { name: "EM PROFA REGINA CELIA MADUREIRA DE SOUZA LIMA", pl: 35, li: 45, lf: 20 }
 ].sort((a, b) => a.pl - b.pl);
+
+// --- DATA SCHOOLS (PRE-READER VIEW FROM IMAGES) ---
+
+export const SCHOOLS_PRE_READER_2025: SchoolResult[] = [
+  { name: "EM JOSE GONCALVES DA SILVA SEU JUQUINHA", pl: 23, li: 0, lf: 77 },
+  { name: "EM VITO ARDITO", pl: 29, li: 0, lf: 71 },
+  { name: "EM JOAO CESARIO", pl: 15, li: 0, lf: 85 },
+  { name: "EM PROFESSORA JULIETA REALE VIEIRA", pl: 33, li: 0, lf: 67 },
+  { name: "EM JOAO KOLENDA LEMOS", pl: 25, li: 0, lf: 75 },
+  { name: "EM PROFA REGINA CELIA MADUREIRA DE SOUZA LIMA", pl: 17, li: 0, lf: 83 },
+  { name: "EM DR FRANCISCO DE ASSIS CESAR", pl: 19, li: 0, lf: 81 },
+  { name: "ESCOLA MUN PADRE MARIO ANTONIO BONOTTI RED...", pl: 14, li: 0, lf: 86 },
+  { name: "EM PROFA MARIA ZARA MINE RENOLDI DOS SANTOS", pl: 18, li: 0, lf: 82 },
+  { name: "EM PROFA MARIA APARECIDA ARANTES VASQUES", pl: 10, li: 0, lf: 90 },
+  { name: "EM PROFA RACHEL DE AGUIAR LOBERTO", pl: 10, li: 0, lf: 90 },
+  { name: "EM SERAFIM FERREIRA SR SARA", pl: 23, li: 0, lf: 77 },
+  { name: "EM PROF LAURO VICENTE DE AZEVEDO", pl: 16, li: 0, lf: 84 },
+  { name: "EM PROFESSOR ORLANDO PIRES", pl: 16, li: 0, lf: 84 },
+  { name: "EM PROFESSOR MARIO DE ASSIS CESAR", pl: 9, li: 0, lf: 91 },
+  { name: "EM ARTHUR DE ANDRADE", pl: 21, li: 0, lf: 79 },
+  { name: "EM PROFA ODETE CORREA MADUREIRA", pl: 11, li: 0, lf: 89 },
+  { name: "EM PROFESSOR JOAQUIM PEREIRA DA SILVA", pl: 18, li: 0, lf: 82 },
+  { name: "EM DOUTOR ANGELO PAZ DA SILVA", pl: 19, li: 0, lf: 81 },
+  { name: "EM PROFESSOR ALEXANDRE MACHADO SALGADO", pl: 19, li: 0, lf: 81 },
+  { name: "EM PROFESSOR ELIAS BARGIS MATHIAS", pl: 25, li: 0, lf: 75 },
+  { name: "EM ABDIAS JUNIOR SANTIAGO E SILVA", pl: 5, li: 0, lf: 95 },
+  { name: "EM DR ANDRE FRANCO MONTORO", pl: 4, li: 0, lf: 96 },
+  { name: "EM DULCE PEDROSA ROMEIRO GUIMARAES", pl: 14, li: 0, lf: 86 },
+  { name: "EM PADRE ZEZINHO", pl: 11, li: 0, lf: 89 },
+  { name: "EM PROFA MADALENA CALTABIANO SALUM BENJAM...", pl: 7, li: 0, lf: 93 },
+  { name: "EM PROFA MARIA APARECIDA CAMARGO DE SOUZA", pl: 29, li: 0, lf: 71 },
+  { name: "EM PROFA MARIA HELENA RIBEIRO VILELA", pl: 4, li: 0, lf: 96 },
+  { name: "EM PROFA MARIA MADUREIRA SALGADO DONA MINI...", pl: 8, li: 0, lf: 92 },
+  { name: "EM PROFESSOR AUGUSTO CESAR RIBEIRO", pl: 5, li: 0, lf: 95 },
+  { name: "EM PROFESSOR FELIX ADIB MIGUEL", pl: 10, li: 0, lf: 90 },
+  { name: "EM PROFESSOR MOACYR DE ALMEIDA", pl: 0, li: 0, lf: 100 },
+  { name: "EM PROFESSOR PAULO FREIRE", pl: 15, li: 0, lf: 85 },
+  { name: "EM PROFESSORA GILDA PIORINI MOLICA", pl: 9, li: 0, lf: 91 },
+  { name: "EM PROFESSORA ISABEL DO CARMO NOGUEIRA", pl: 9, li: 0, lf: 91 },
+  { name: "EM PROFESSORA RUTH AZEVEDO ROMEIRO", pl: 14, li: 0, lf: 86 },
+  { name: "EM PROFESSORA YVONE APPARECIDA ARANTES CO...", pl: 31, li: 0, lf: 69 }
+];
